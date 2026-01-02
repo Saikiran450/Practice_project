@@ -25,9 +25,9 @@ public class WebDriverUtility {
 	                	        return p;
 	                	 
 	                 }
-	                 public void switchToParentFrame(WebDriver w) {
-	                	 String p=w.getWindowHandle();
-                	      w.switchTo().window(p);
+	                 public void switchToParentFrame(WebDriver w,String parent) {
+	                	 
+                	      w.switchTo().window(parent);
                 	 
                  }
 	                 public Set<String> getChild_Plusparent_ids(WebDriver w) {
